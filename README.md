@@ -19,13 +19,19 @@ Este projeto é uma implementação simples de um Sistema Bancário utilizando a
             Banco Marcos Rabelo
 
 [d] Depositar
+
 [s] Sacar (Limite: R$ 500 por saque)
+
 [e] Extrato
+
 [q] Sair
 
+
 * Você pode realizar até 3 saques diários.
+  
 
 ==================================================
+
 => 
 
 
