@@ -1,19 +1,18 @@
 # Sistema Bancário em Python - Banco Marcos Rabelo
 
-Este projeto é uma implementação simples de um Sistema Bancário utilizando a linguagem Python. Ele simula as principais operações de um banco, permitindo realizar depósitos, saques e consultar o extrato. O objetivo do sistema é fornecer uma interface básica para operações financeiras, com limites e restrições típicos de um banco real.
+Este repositório contém duas versões do projeto de Sistema Bancário em Python, desenvolvido para simular operações bancárias com funcionalidades básicas e avançadas.
 
-## Funcionalidades Implementadas:
-- **Depósito**: Permite ao usuário realizar depósitos em sua conta, com validação de entrada para garantir que o valor seja positivo.
-- **Saque**: Limite de R$ 500,00 por saque e até 3 saques diários. O sistema verifica se há saldo suficiente antes de processar o saque.
-- **Extrato**: Exibe todas as movimentações realizadas, como depósitos e saques, além do saldo atual.
-- **Limites de Operações**: Até 3 saques por dia, com um limite de R$ 500,00 por operação de saque.
+## Projeto 1: Sistema Bancário Básico
 
-## Como funciona:
-- O menu interativo permite ao usuário escolher entre as opções de depósito, saque, extrato ou sair.
-- O código garante que o usuário só possa sacar até o limite permitido por dia e impede que valores inválidos sejam inseridos nas operações.
-- Ao final, o usuário pode visualizar um extrato detalhado de todas as movimentações realizadas durante a sessão.
+Este projeto é uma implementação inicial de um sistema bancário simples. Ele simula as principais operações de um banco, com funcionalidades e restrições básicas para depósitos, saques e extratos.
 
-## Exemplo de Menu:
+### Funcionalidades Implementadas
+- **Depósito**: Permite ao usuário realizar depósitos, com validação para valores positivos.
+- **Saque**: Limite de R$ 500,00 por saque, com até 3 saques diários, respeitando o saldo disponível.
+- **Extrato**: Exibe todas as movimentações e o saldo atual.
+- **Limites de Operações**: Até 3 saques por dia e limite de R$ 500,00 por saque.
+
+### Exemplo de Menu - Projeto 1
 ==================================================
 
             Banco Marcos Rabelo
@@ -35,12 +34,71 @@ Este projeto é uma implementação simples de um Sistema Bancário utilizando a
 => 
 
 
-## Tecnologias Utilizadas:
-- **Linguagem**: Python
-- **Conceitos**: Controle de fluxo, validação de entrada, manipulação de strings e operações financeiras simples.
 
-## Objetivo do Projeto:
-Este projeto foi desenvolvido como parte de um desafio proposto pela [DIO](https://web.dio.me) (Digital Innovation One), com o intuito de praticar lógica de programação e controle de fluxo em Python. Ele simula operações bancárias e oferece uma oportunidade de aplicar conhecimentos em desenvolvimento de sistemas.
+### Tecnologias e Conceitos
+- **Linguagem**: Python
+- **Conceitos**: Controle de fluxo, validação de entrada e operações financeiras simples.
 
 ---
+
+## Projeto 2: Melhorias com Suporte a Múltiplas Contas
+
+Nesta versão, o sistema foi aprimorado para gerenciar múltiplas contas por usuário, permitindo um controle mais detalhado de cada conta. As transações são registradas individualmente por conta, com extratos detalhados.
+
+### Funcionalidades Adicionais
+- **Múltiplas Contas por Usuário**: Permite que cada usuário possua várias contas.
+- **Registro por Conta**: Cada conta possui um histórico individual com saldo, agência, número da conta, CPF e transações (depósitos e saques).
+- **Extrato Detalhado**: Exibe o saldo e o histórico de cada conta separadamente.
+
+### Exemplo de Menu - Projeto 2
+
+            MENU INICIAL CADASTRO DE USUARIO E CONTA
+
+==================================================
+
+                Banco Marcos Rabelo
+
+    [u] Cadastro de Novo Usuário
+    
+    [c] Cadastro de Conta
+    
+    [l] Listar Contas e Usuarios
+    
+    [a] Acesso ao Sistema
+    
+    [q] Sair
+
+==================================================
+
+                        MENU PRINCIPAL
+
+==================================================
+
+                Banco Marcos Rabelo
+
+    [d] Depositar
+    
+    [s] Sacar (Limite: R$ 500 por saque)
+    
+    [e] Extrato
+    
+    [q] Sair
+
+    * Você pode realizar até 3 saques diários.
+
+    ==================================================
+
+ 
+### Tecnologias e Conceitos
+- **Linguagem**: Python
+- **Conceitos**: Estruturas de dados para gerenciar múltiplas contas, controle de fluxo aprimorado e operações financeiras detalhadas.
+
+---
+
+## Objetivo do Projeto
+Esses projetos foram desenvolvidos como parte de um desafio da DIO (Digital Innovation One), com o objetivo de praticar lógica de programação e controle de fluxo em Python. As melhorias na segunda versão tornam o sistema mais realista e funcional, permitindo a experiência de um sistema bancário com múltiplas contas.
+
+---
+
+Este README fornece uma visão geral das funcionalidades e dos menus de cada versão, destacando a evolução do sistema bancário no repositório.
 
